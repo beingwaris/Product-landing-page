@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding-bottom: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px 0;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2B7CFF;
+}
+.cta-nav {
+    background: #2B7CFF;
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background .2s;
+}
+.cta-nav:hover {
+    background: #185cb7;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+.hero-content {
+    flex: 2;
+    min-width: 270px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 20px 0;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+.cta-main {
+    background: #2B7CFF;
+    color: #fff;
+    padding: 14px 38px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(43,124,255,0.12);
+    transition: background .2s, box-shadow .2s;
+}
+.cta-main:hover {
+    background: #185cb7;
+    box-shadow: 0 6px 24px rgba(43,124,255,0.18);
+}
+.hero-img {
+    flex: 1;
+    text-align: right;
+    min-width: 200px;
+}
+.hero-img img {
+    max-width: 300px;
+    width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 36px rgba(43,124,255,0.10);
+}
+.features {
+    background: #f0f6ff;
+    padding: 60px 0 40px 0;
+}
+.features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.feature {
+    background: #fff;
+    padding: 28px 22px;
+    border-radius: 14px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    box-shadow: 0 2px 8px rgba(43,124,255,0.07);
+    text-align: center;
+}
+.feature img {
+    width: 48px;
+    margin-bottom: 12px;
+}
+.feature h3 {
+    margin: 12px 0 8px 0;
+    color: #2B7CFF;
+}
+.testimonials {
+    background: #fff;
+    padding: 60px 0 40px 0;
+}
+.testimonials h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.testimonial {
+    background: #f0f6ff;
+    padding: 24px 22px;
+    border-radius: 14px;
+    max-width: 320px;
+    font-style: italic;
+    box-shadow: 0 1px 5px rgba(43,124,255,0.08);
+}
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-style: normal;
+    font-weight: bold;
+}
+.buy {
+    background: #2B7CFF;
+    color: #fff;
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+.buy h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.price {
+    font-size: 2.2rem;
+    margin: 14px 0 0 0;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #e1e1e1;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+.buy-form {
+    margin: 28px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.buy-form input[type="email"] {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    min-width: 210px;
+}
+.buy-form button {
+    background: #fff;
+    color: #2B7CFF;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+.buy-form button:hover {
+    background: #f0f6ff;
+    color: #185cb7;
+}
+.guarantee {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 1rem;
+    margin-top: 0;
+}
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img {
+        text-align: center;
+        margin-top: 24px;
+    }
+    .features-list, .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
